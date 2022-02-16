@@ -570,7 +570,8 @@ height:300px;
     color: #222;
 }
 
-.popup .form .form-element input[type="text"] {
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="email"] {
     margin-top: 5px;
     display: block;
     width: 100%;
