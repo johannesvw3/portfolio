@@ -78,6 +78,7 @@ header {
 
  .intro-description {
     border-bottom: 3px dashed white;
+    text-align: center;
  }
 
  #jop {
@@ -85,7 +86,6 @@ margin: 0px;
 padding: 0px;
 height:300px;
  }
-
 
 
 .social-media {
@@ -111,49 +111,66 @@ height:300px;
 
 /* My works image styles */
 
+/* Top */
+
+.works-title {
+    color: white;
+    font-family: Spartan;
+    text-align: center;
+}
+
 .my-works {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 4%;
-    grid-gap: 20px;
+    grid-gap: 50px;
+    justify-items: center;
 }
 
 .project-title {
     display: flex;
     justify-content: center;
     font-family: Spartan;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .project-description {
     margin: 20px;
+    margin-bottom: 80px;
     font-family: Spartan;
+    max-height: 80px;
+    min-height: 80px;;
+    color: white;
 }
 
 .image {
     position: relative;
-    width: 400px;
-    background-color: white;
+    width: 380px;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
     border-radius: 10%;
-    border: 4px rgb(0, 0, 0) solid;
+    border: 4px rgb(172, 168, 168) solid;
 }
 
 .image__img {
     display: block;
-    min-height: 350px;
+    height: 330px;
     width: 100%;
     border-radius: 10%;
 }
 
+
+/* img Overlay */
+
 .image__overlay {
-    border-radius: 8%;
+    border-radius: 8% 8% 0 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 82%;
     background: rgba(0, 0, 0, 0.6);
-    color: #000000;
+    color: white;
     font-family: Spartan;
     display: flex;
     flex-direction: column;
@@ -168,7 +185,7 @@ height:300px;
 }
 
 .image__overlay--primary {
-    background: #7dc753e1;
+    background: #12192ce3;
 }
 
 .image__overlay > * {
@@ -194,32 +211,98 @@ height:300px;
     margin-top: 0.25em;
 }
 
- /*back to top button */
 
-#myBtn {
-    height: 15px;
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 20px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(255, 255, 255); /* Set a background color */
-    color: rgb(0, 0, 0); /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 50px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+/* Work Icons */
+
+.icons-work{
+    background: #12192c;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 0 0 30px 30px;
+    justify-content: space-evenly;
+}
+.icons-work li{
+    list-style-type: none;
+    background: #B721FF;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.icons li:hover{
+    background: #edffec;
+    color: #000;
+}
+
+/* Video Pop-up */
+
+#VisaChipCardVideo {
+    height: 600px;
+}
+
+#fade {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
   }
   
-  #myBtn:hover {
-    background-color: rgb(44, 162, 241); /* Add a dark-grey background on hover */
+  #light {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    z-index: 1002;
+    overflow: visible;
   }
+  
+  #boxclose {
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 3px;
+    background: #222222;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 1002;
+    opacity: 0.9;
+  }
+  
+  .boxclose:before {
+    content: "×";
+  }
+  
+  #fade:hover ~ #boxclose {
+    display:none;
+  }
+  
 
   /* About me section */
 
-  
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 
@@ -308,7 +391,6 @@ height:300px;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
 .icons li:hover{
@@ -405,4 +487,132 @@ height:300px;
     }
 } 
 
+
+/* Contact Form */
+
+.popup {
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    font-family: Spartan;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 0ms ease-in-out 0ms,
+                transform 0ms ease-in-out 0ms;
+}
+
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.25);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 0ms ease-in-out 0ms,
+                transform 0ms ease-in-out 0ms;
+}
+
+#fadeForm {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+  }
+  
+  #lightForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    z-index: 1002;
+    overflow: visible;
+  }
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form .form-title {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popup .form .form-element {
+    margin: 15px 0px;
+}
+
+.popup .form .form-element label {
+    font-size: 14px;
+    color: #222;
+}
+
+.popup .form .form-element input[type="text"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup .form .form-element .submit-form {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 15px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ /*back to top button */
+
+ #myBtn {
+    height: 15px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(255, 255, 255); /* Set a background color */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(44, 162, 241); /* Add a dark-grey background on hover */
+  }
 
