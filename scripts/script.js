@@ -50,9 +50,15 @@ document.querySelector('#contact-me').addEventListener("click", function() {
   document.querySelector(".popup").classList.add('active');
 });
 
+document.querySelector('#contact-me2').addEventListener("click", function() {
+  document.querySelector(".popup").classList.add('active');
+});
+
 document.querySelector('.popup .close-btn').addEventListener("click", function() {
   document.querySelector(".popup").classList.remove('active');
 });
+
+
 
 
 //Resume Pop-up
