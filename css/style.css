@@ -622,7 +622,9 @@ height:300px;
 }
 
 .popup .form .form-element input[type="text"],
+.popup .form .form-element textarea[type="text"],
 .popup .form .form-element input[type="email"] {
+    resize:vertical;
     margin-top: 5px;
     display: block;
     width: 100%;
@@ -910,10 +912,10 @@ margin-top: 10%;
 .popup {
     position: fixed;
     top: -150%;
-    left: 50%;
+    left: 45%;
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.25);
-    width: 380px;
+    width: 180px;
     padding: 20px 30px;
     background: #fff;
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
@@ -963,6 +965,10 @@ margin-top: 10%;
     color: #222;
 }
 
+.form {
+    margin-right: 20px;
+}
+
 .popup .form .form-element input[type="text"],
 .popup .form .form-element input[type="email"] {
     margin-top: 5px;
@@ -986,4 +992,63 @@ margin-top: 10%;
     border-radius: 10px;
     cursor: pointer;
 }
+
+
+/* pop-up video */
+
+#VisaChipCardVideo {
+    height: 450px;
+}
+
+#fade {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+  }
+  
+  #light {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -315px;
+    margin-top: -300px;
+    z-index: 1002;
+    overflow: visible;
+  }
+  
+  #boxclose {
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 3px;
+    background: #222222;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 1002;
+    opacity: 0.9;
+  }
+  
+  .boxclose:before {
+    content: "×";
+  }
+  
+  #fade:hover ~ #boxclose {
+    display:none;
+  }
 }
