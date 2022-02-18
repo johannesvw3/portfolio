@@ -1030,7 +1030,8 @@ video[controls] {
 
 #resume-mobile {
     display: block;
-    height: 350px;
+    height: 450px;
+    width: 300px;
 }
   
   #lightResume {
