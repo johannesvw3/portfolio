@@ -52,3 +52,24 @@ document.querySelector('.popup .close-btn').addEventListener("click", function()
   document.querySelector(".popup").classList.remove('active');
 });
 
+
+
+window.document.onkeydown = function(e) {
+  if (!e) {
+    e = event;
+  }
+  if (e.keyCode == 27) {
+    lightbox_closeResume();
+  }
+}
+
+function lightbox_openResume() {
+  window.scrollTo(0, 0);
+  document.getElementById('lightResume').style.display = 'block';
+  document.getElementById('fadeResume').style.display = 'block';
+}
+
+function lightbox_closeResume() {
+  document.getElementById('lightResume').style.display = 'none';
+  document.getElementById('fadeResume').style.display = 'none';
+}

@@ -41,13 +41,23 @@
     <div class="social-media">
         <a href="https://github.com/johannesvw3" target="_blank">
         <img src="github.png" class="github-logo slogo" alt="github-logo"></a>
-        <a href="" target="_blank">
+        <a href="https://www.linkedin.com/in/johannes-van-woerkom-b3221115a/" target="_blank">
         <img src="linkedin.png" class="LinkedIn-logo slogo" alt="LinkedIn-logo"></a>
-        <a href="" target="_blank">
         <a href = "mailto: johannesvw3@gmail.com">
             <img src="email.png" class="email-logo slogo" alt="email-logo"></a>
         </a>
-        <img src="cv.png" class="cv-logo slogo" alt="cv-logo"></a>
+        <div id="lightResume">
+            <a class="boxcloseResume" id="boxcloseResume" onclick="lightbox_closeResume();"></a>
+            <embed id="Resume" width="600" src="JVW-Resume.pdf" type="application/pdf">
+                <!--Browser does not support <video> tag -->
+                </img>
+          </div>
+          
+          <div id="fadeResume" onClick="lightbox_closeResume();"></div>
+          
+          <div>
+            <a href="#" onclick="lightbox_openResume();"><img src="cv.png" class="github-logo slogo" alt="CV-Logo"></a>
+          </div>
     </div>
 </div>
 
