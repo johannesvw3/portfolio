@@ -366,6 +366,9 @@ height:300px;
     display:none;
   }
   
+  #resume-mobile {
+      display: none;
+  }
 
   /* About me section */
 
@@ -1004,19 +1007,7 @@ video[controls] {
     width: 350px;
 }
 
-#fade {
-    display: none;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 1001;
-    -moz-opacity: 0.8;
-    opacity: .80;
-    filter: alpha(opacity=80);
-  }
+
   
   #light {
     display: none;
@@ -1028,31 +1019,29 @@ video[controls] {
     z-index: 1002;
     overflow: visible;
   }
+
+
+
+/* Resume */
+
+#Resume {
+    display: none;
+}
+
+#resume-mobile {
+    display: block;
+    height: 350px;
+}
   
-  #boxclose {
-    float: right;
-    cursor: pointer;
-    color: #fff;
-    border: 1px solid #AEAEAE;
-    border-radius: 3px;
-    background: #222222;
-    font-size: 31px;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 0px;
-    padding: 11px 3px;
-    position: absolute;
-    right: 2px;
-    top: 2px;
+  #lightResume {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -158px;
+    margin-top: -300px;
     z-index: 1002;
-    opacity: 0.9;
+    overflow: visible;
   }
   
-  .boxclose:before {
-    content: "×";
-  }
-  
-  #fade:hover ~ #boxclose {
-    display:none;
-  }
 }
