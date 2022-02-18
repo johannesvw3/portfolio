@@ -671,9 +671,10 @@ height:300px;
 
   /* Media Queries */
 
-  /* Home Screen */
-
   /*Iphone Portrait */
+
+  /* Home Screen */
+  
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 480px)
@@ -781,4 +782,113 @@ margin-top: 10%;
     padding: 9;
 }
 
+}
+
+/* Work screen */
+
+.works-title {
+    margin-top: 100px;
+    color: white;
+    font-family: Spartan;
+    text-align: center;
+    font-size: 20px;
+}
+
+.my-works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 4%;
+    grid-gap: 50px;
+    justify-items: center;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    font-family: Spartan;
+    color: rgb(255, 255, 255);
+    font-size: 8px;
+}
+
+.project-description {
+    display: none;
+}
+
+.image {
+    position: relative;
+    width: 110px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    border: 4px rgb(172, 168, 168) solid;
+    font-size: 6px;
+}
+
+.image__img {
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+/* img Overlay */
+
+.image__overlay {
+    border-radius: 8% 8% 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 67%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: Spartan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #12192ce3;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+.icons-work{
+    background: #12192c;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 0 0 3px 3px;
+    justify-content: space-evenly;
 }
