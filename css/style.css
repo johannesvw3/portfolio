@@ -668,3 +668,117 @@ height:300px;
     background-color: rgb(44, 162, 241); /* Add a dark-grey background on hover */
   }
 
+
+  /* Media Queries */
+
+  /* Home Screen */
+
+  /*Iphone Portrait */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+
+  .my-logo {
+    height: 30px;
+    margin-bottom: 0;
+    margin-left: 1%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    font-size: 7px;
+    font-family: Spartan;
+    color: white;
+    border-bottom: 1px solid white;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+.menuitem {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.intro-text {
+    color: white;
+    font-family: Spartan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    margin-left: 15%;
+    padding: 0px;
+}
+
+ .first-name, .last-name, .hello, .intro-description {
+    display: flex;
+    justify-content: center;
+     margin: 0.5px;
+     width: 250px;
+     height: 20px;
+     text-align: right;
+ }
+
+ .first-name, .last-name, .intro-description {
+     border-left: 3px dashed white;
+     border-right: 3px dashed white;
+     padding: 10px;
+ }
+
+ .hello {
+     font-size: 7.9px;
+ }
+
+ .first-name {
+     font-size: 25px;
+ }
+
+ .last-name {
+     font-size: 17px;
+ }
+
+ .intro-description {
+    border-bottom: 3px dashed white;
+    text-align: center;
+    width: 250px;
+    font-size: 9px;
+ }
+
+ #jop {
+padding: 0px;
+height:130px;
+width: 130px;
+margin-left: 25%;
+margin-top: 10%;
+ }
+
+
+.social-media {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+}
+
+.slogo {
+    height: 20px;
+    padding: 9;
+}
+
+}

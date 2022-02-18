@@ -44,6 +44,8 @@ function lightbox_close() {
   lightBoxVideo.pause();
 }
 
+//Form Pop-up
+
 document.querySelector('#contact-me').addEventListener("click", function() {
   document.querySelector(".popup").classList.add('active');
 });
@@ -53,6 +55,7 @@ document.querySelector('.popup .close-btn').addEventListener("click", function()
 });
 
 
+//Resume Pop-up
 
 window.document.onkeydown = function(e) {
   if (!e) {
