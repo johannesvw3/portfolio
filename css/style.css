@@ -691,9 +691,7 @@ and (orientation: portrait) {
 background: linear-gradient(90deg, rgba(61,116,3,1) 0%, rgba(0,0,0,1) 71%, rgba(61,116,3,1) 100%);
     }
     
-    #videoBG {
-        display: none;
-    }
+    
 
 
   .my-logo {
@@ -792,6 +790,7 @@ margin-top: 10%;
 }
 
 .slogo {
+    margin-top: 10px;
     height: 20px;
     padding: 9;
 }
