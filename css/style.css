@@ -787,10 +787,10 @@ margin-top: 10%;
     display: flex;
     flex-flow: column wrap;
     align-content: flex-end;
+    grid-gap: 10px;
 }
 
 .slogo {
-    margin-top: 15px;
     height: 20px;
     padding: 9;
 }
@@ -905,8 +905,9 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     padding: 0.8rem 0;
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 7px 7px;
     justify-content: space-evenly;
+    height: 18%
 }
 
 /* Contact-Form */
@@ -1043,5 +1044,184 @@ video[controls] {
     z-index: 1002;
     overflow: visible;
   }
+
+/* About me section */
+
+.about-title {
+    margin-top: 200px;
+    color: white;
+    font-family: Spartan;
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+#about {
+    background-color: rgba(255, 255, 255, 0.075);
+    margin: 5% 10% 5%;
+}
+
+.about-wrapper{
+    height: 100vh;
+}
+.about-left{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color:#fff
+}
+.about-left-content > div{
+    background: #12192c59;
+    padding: 1rem 4rem 2.5rem 5rem;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+.about-left-content{
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    border-radius: 12px;
+    width:70%;
+}
+.about-img .jop-glasses{
+    display: block;
+    width: 100px;;
+    height: auto;
+}
+.about-img{
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.about-left-content h2{
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #00fff2;
+}
+.about-left-content h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+
+
+.icons{
+    background: #12192c;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 0 0 12px 12px;
+}
+.icons li{
+    list-style-type: none;
+    background: #00fff2;
+    color: rgb(0, 0, 0);
+    font-family: Spartan;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.icons li:hover{
+    background: #edffec;
+    color: #000;
+}
+.about-right{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+    color:#fff
+}
+
+.about-right-content {
+    padding: 4rem 4rem 2.5rem 5rem;
+    text-align: center;
+    border-radius: 12px;
+}
+.about-right h1{
+    font-size: 4rem;
+    font-family: Spartan;
+    text-transform: uppercase;
+}
+.about-right h1 span{
+    color: #00fff2;
+}
+.about-right h2{
+    font-weight: 600;
+}
+.about-btns{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color:#fff
+}
+.btn.btn-pink{
+    background: #0a0535;
+    color: #fff;
+    border-color: #0a0535;
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-pink:hover{
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.btn.btn-white{
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-white:hover{
+    background: #0a0535;
+    border-color: #0a0535;
+    color: #fff;
+}
+.about-para p{
+    font-family: Spartan;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
   
 }
