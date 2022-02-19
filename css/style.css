@@ -163,12 +163,9 @@ height:300px;
 /*.me-image {
     height: 50px;
 }
-
-
 .me-exclamation {
     margin-top: 100px;
 }
-
 .me-items {
     display: flex;
     flex-direction: column;

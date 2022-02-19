@@ -203,7 +203,20 @@
           <h1>Hello World<span>!</span></h1>
           <h2>Here's who I am & what I do</h2>
           <div class = "about-btns">
-            <button type = "button" class = "btn btn-pink">resume / CV</button>
+            <div id="lightResume">
+                <a class="boxcloseResume" id="boxcloseResume" onclick="lightbox_closeResume();"></a>
+                <embed id="Resume" width="600" src="JVW-Resume.pdf" type="application/pdf">
+                <img id="resume-mobile" src="resume.jpg" alt="resume">
+                    <!--Browser does not support <video> tag -->
+                    </img>
+              </div>
+              
+              <div id="fadeResume" onClick="lightbox_closeResume();"></div>
+              
+              <div>
+                <a href="#" onclick="lightbox_openResume();"><button type = "button" class = "btn btn-pink">resume / CV</button></a>
+              </div>
+            
             <button type = "button" id= "contact-me2" class = "btn btn-white">Contact Me</button>
           </div>
   
