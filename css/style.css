@@ -801,7 +801,7 @@ margin-top: 10%;
 /* Work screen */
 
 .works-title {
-    margin-top: 100px;
+    margin-top: 250px;
     color: white;
     font-family: Spartan;
     text-align: center;
@@ -1081,7 +1081,7 @@ video[controls] {
 
 #mobile-jop-glasses {
     display: block;
-    margin-left: 0%;
+    margin-left: -4%;
     margin-top: -80px;
     margin-bottom: 50px;
     height: 250px;
