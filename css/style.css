@@ -790,6 +790,7 @@ margin-top: 10%;
     flex-flow: column wrap;
     align-content: flex-end;
     grid-gap: 10px;
+    margin-top: 150px;
 }
 
 .slogo {
@@ -801,7 +802,7 @@ margin-top: 10%;
 /* Work screen */
 
 .works-title {
-    margin-top: 250px;
+    margin-top: 100px;
     color: white;
     font-family: Spartan;
     text-align: center;
@@ -1082,7 +1083,7 @@ video[controls] {
 #mobile-jop-glasses {
     display: block;
     margin-left: -4%;
-    margin-top: -80px;
+    margin-top: -50px;
     margin-bottom: 50px;
     height: 250px;
     border-radius: 50%;
