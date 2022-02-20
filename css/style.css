@@ -1107,6 +1107,10 @@ video[controls] {
     display: none;
 }
 
+#title-desktop {
+    display: none;;
+}
+
 #exclamation-point {
     display: none;
 }
