@@ -1090,7 +1090,7 @@ video[controls] {
 
 #mobile-jop-glasses {
     display: block;
-    margin-left: -4%;
+    margin-left: 12px;
     margin-top: -50px;
     margin-bottom: 50px;
     height: 180px;
