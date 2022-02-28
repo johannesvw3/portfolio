@@ -367,6 +367,31 @@ height:300px;
       display: none;
   }
 
+  #fadeReact {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+  }
+  
+  #lightReact {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    margin-left: -300px;
+    margin-top: -300px;
+    z-index: 1002;
+    overflow: visible;
+  }
+
   /* About me section */
 
   .about-title {
@@ -1014,8 +1039,13 @@ margin-top: 10%;
     height: 450px;
 }
 
+#myflix-react {
+    height: 450px;
+    width: 300px;
+}
+
 video[controls] {
-    width: 350px;
+    width: 450px;
 }
 
 
@@ -1025,6 +1055,17 @@ video[controls] {
     position: fixed;
     top: 50%;
     left: 50%;
+    margin-left: -190px;
+    margin-top: -300px;
+    z-index: 1002;
+    overflow: visible;
+  }
+
+  #lightReact {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 60%;
     margin-left: -190px;
     margin-top: -300px;
     z-index: 1002;

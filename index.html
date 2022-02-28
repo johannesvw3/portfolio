@@ -103,7 +103,7 @@
           <div id="fade" onClick="lightbox_close();"></div>
           
           <div>
-            <a href="#" onclick="lightbox_open();"><img src="video-img.png" class="github-logo slogo" alt="video camera-image"></a>
+            <a href="#chitchatter" onclick="lightbox_open();"><img src="video-img.png" class="github-logo slogo" alt="video camera-image"></a>
           </div>
 </div>
 <div class="image">
@@ -120,20 +120,31 @@
         <a href="https://github.com/johannesvw3/movie-api" ><img src="github.png" class="github-logo slogo" alt="github-logo"></a>
     </ul>
 </div>
-<div class="image">
-    <img class="image__img" src="myflix-react.png" alt="Meet App Image">
-    <div class="image__overlay image__overlay--primary">
-        <div class="image__title">myFlix-client</div>
-        <p class="image__description">
-            React Redux
-        </p>
-    </div>
+    <div class="image">
+        <img class="image__img" id="myFlix-client-react" src="myflix-react.png" alt="my flix-react image">
+        <div class="image__overlay image__overlay--primary">
+            <div class="image__title">myFlix-client</div>
+            <p class="image__description">React Redux</p>
+        </div>
     <h2 class="project-title">myFlix-client (React)</h2>
     <p class="project-description">Using React, build the client-side for an application called myFlix based on its existing server-side code (REST API and database).</p>
     <ul class = "icons-work">
         <a href="https://github.com/johannesvw3/myFlix-client-react" ><img src="github.png" class="github-logo slogo" alt="github-logo"></a>
-    </ul>
+        <div id="lightReact">
+            <a class="boxclose" id="boxclose" onclick="lightbox_closeReact();"></a>
+            <video id="myflix-react" width="1200" controls>
+                <source src="myflix-vid.mp4" type="video/mp4">
+                <!--Browser does not support <video> tag -->
+              </video>
+          </div>
+          
+          <div id="fadeReact" onClick="lightbox_closeReact();"></div>
+          
+          <div>
+            <a href="#chitchatter" onclick="lightbox_openReact();"><img src="video-img1.png" class="github-logo slogo" alt="video camera-image"></a>
+          </div>
 </div>
+
 <div class="image">
     <img class="image__img" src="pokedex.png" alt="Meet App Image">
     <div class="image__overlay image__overlay--primary">

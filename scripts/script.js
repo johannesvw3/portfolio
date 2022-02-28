@@ -44,6 +44,21 @@ function lightbox_close() {
   lightBoxVideo.pause();
 }
 
+function lightbox_openReact() {
+  var lightBoxVideo1 = document.getElementById("myflix-react");
+  window.scrollTo(0, 0);
+  document.getElementById('lightReact').style.display = 'block';
+  document.getElementById('fadeReact').style.display = 'block';
+  lightBoxVideo1.play();
+}
+
+function lightbox_closeReact() {
+  var lightBoxVideo1 = document.getElementById("myflix-react");
+  document.getElementById('lightReact').style.display = 'none';
+  document.getElementById('fadeReact').style.display = 'none';
+  lightBoxVideo1.pause();
+}
+
 //Form Pop-up
 
 document.querySelector('#contact-me').addEventListener("click", function() {
